@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    font-family: "Onest", sans-serif;
+    background-image:
+        linear-gradient(to bottom right in oklab,
+            oklch(10% 0.50 144) 0%, oklch(18% 0.5 144) 100%);
+    color: white;
+}
+
+form {
+    display: grid;
+    gap: 1em;
+    padding: 2em;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 1em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+    border: 1px dotted white;
+}
+
+textarea:focus-visible{
+    border: 1px solid black;
+}
+
+a{
+    width: max-content;
+    display: flex;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #24CC63;
+    padding: .5em 1em;
+    border-radius: 999px;
+    gap: .3em
+}
+svg{
+    width: 1rem;
+}
+.disabled{
+    opacity: 0.25;
+    pointer-events: none;
+}
